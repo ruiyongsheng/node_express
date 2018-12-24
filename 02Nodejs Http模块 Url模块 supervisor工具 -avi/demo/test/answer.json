@@ -1,0 +1,52 @@
+[
+    {
+        "question": "小鲜肉接二连三抢占王位，你觉得他们指的是？",
+        "answer": [
+            {
+                "answerId": "1",
+                "answerDec": "90后",
+                "isAnswer": "false"
+            },
+            {
+                "answerId": "2",
+                "answerDec": "85后",
+                "isAnswer": "false"
+            },
+            {
+                "answerId": "3",
+                "answerDec": "00后",
+                "isAnswer": "false"
+            },
+            {
+                "answerId": "4",
+                "answerDec": "95后",
+                "isAnswer": "true"
+            }
+        ]
+    },
+    {
+        "question": "传说中，我要给你生猴子，指的是谁？",
+        "answer": [
+            {
+                "answerId": "1",
+                "answerDec": "陈学冬",
+                "isAnswer": "false"
+            },
+            {
+                "answerId": "2",
+                "answerDec": "鹿晗",
+                "isAnswer": "false"
+            },
+            {
+                "answerId": "3",
+                "answerDec": "李易峰",
+                "isAnswer": "false"
+            },
+            {
+                "answerId": "4",
+                "answerDec": "陈伟霆",
+                "isAnswer": "true"
+            }
+        ]
+    }
+]

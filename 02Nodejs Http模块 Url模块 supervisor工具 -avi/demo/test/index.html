@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/axios/0.18.0/axios.min.js"></script>
+</head>
+
+<body>
+    <div id='answer'>
+        <ul class="question" v-for="question in questionList">
+            <p class="questionTitle">{{question.question}}</p>
+            <li class="answerList" v-for="answer in question.answer">
+                {{answer.answerDec}}
+            </li>
+        </ul>
+    </div>
+    <script>
+        new Vue({
+            el: '#answer',
+            data: {
+                checkedNames: [],
+                questionList: [
+                    {
+                        "question": "小鲜肉接二连三抢占王位，你觉得他们指的是？",
+                        "answer": [
+                            {
+                                "answerId": "1",
+                                "answerDec": "90后",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "2",
+                                "answerDec": "85后",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "3",
+                                "answerDec": "00后",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "4",
+                                "answerDec": "95后",
+                                "isAnswer": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "question": "传说中，我要给你生猴子，指的是谁？",
+                        "answer": [
+                            {
+                                "answerId": "1",
+                                "answerDec": "陈学冬",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "2",
+                                "answerDec": "鹿晗",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "3",
+                                "answerDec": "李易峰",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "4",
+                                "answerDec": "陈伟霆",
+                                "isAnswer": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "question": "传说中，我要给你生猴子，指的是谁？",
+                        "answer": [
+                            {
+                                "answerId": "1",
+                                "answerDec": "陈学冬",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "2",
+                                "answerDec": "鹿晗",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "3",
+                                "answerDec": "李易峰",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "4",
+                                "answerDec": "陈伟霆",
+                                "isAnswer": "true"
+                            }
+                        ]
+                    },
+                    {
+                        "question": "传说中，我要给你生猴子，指的是谁？",
+                        "answer": [
+                            {
+                                "answerId": "1",
+                                "answerDec": "陈学冬",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "2",
+                                "answerDec": "鹿晗",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "3",
+                                "answerDec": "李易峰",
+                                "isAnswer": "false"
+                            },
+                            {
+                                "answerId": "4",
+                                "answerDec": "陈伟霆",
+                                "isAnswer": "true"
+                            }
+                        ]
+                    }
+                ],
+                
+            },
+            // beforeCreate() {
+            //     this.$nextTick(function () {
+            //         axios.get('./answer.json').then(function (res) {
+            //             this.questionList = res.data;
+            //             console.log(this.questionList);
+            //             this.ok = true;
+            //         })
+            //     })
+            // },
+        })
+    </script>
+</body>
+
+</html>

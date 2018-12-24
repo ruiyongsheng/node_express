@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/index.php" method="get" onsubmit="return aaa()">
+        <div>
+            <p for="first">
+                1. For whom did Simi write songs according to the article “10 things you didn’t know
+                about me?”
+            </p>
+            <p>
+                <input type="radio" name="first"  value="a">
+                <span>Wizkid</span>
+            </p>
+            <p>
+                <input type="radio" name="first"  value="b">
+                <span>Adekunle Gold</span>
+            </p>
+            <p>
+                <input type="radio" name="first"  value="c">
+                <span>Falz (Correct)</span>
+            </p>
+        </div>
+        <div>
+            <p for="first">
+                2. Simi’s debut album won “Album of the Year” in 2018. Who was her competition?”
+            </p>
+            <p>
+                <input type="radio" name="second"  value="a">
+                <span>Flavour (Correct)</span>
+            </p>
+            <p>
+                <input type="radio" name="second"  value="b">
+                <span>Mr Eazi</span>
+            </p>
+            <p>
+                <input type="radio" name="second"  value="c">
+                <span>Wizkid (Correct)</span>
+            </p>
+        </div>
+        <input type="submit" value="提交"></input>
+    </form>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        function aaa() {
+            alert('表单提交了');
+            if($('input:radio:checked').length !== 2) {
+                alert('您还有未填写的选项');
+                return false;
+            }   
+        };
+    </script>
+</body>
+
+</html>
